@@ -46,6 +46,54 @@ bld/
 # TwinCAT user/session state
 *.~u
 
+# TwinCAT 3 generated files
+# Based on the GitHub TwinCAT3 template and Beckhoff's Source Control guide.
+
+# PLC compiler and diagnostic output
+*.plcproj.bak
+*.plcproj.orig
+*.tpy
+*.tclrs
+*.library
+*.compiled-library
+*.compileinfo
+*.asm
+*.core
+LineIDs.dbg
+LineIDs.dbg.bak
+
+# TMC files are generated for plain PLC projects. Keep this rule disabled if
+# the project contains TwinCAT C++ or shared types whose TMC is source data.
+*.tmc
+*.tmcRefac
+
+# TwinCAT project backups and temporary variants
+*.tsproj.bak
+*.tsproj.b?k
+*.tsproj.orig
+*.tspproj.bak
+*.xti.bak
+*.xti.bk?
+*.xti.orig
+*.xtv
+*.xtv.bak
+*.xtv.bk?
+*.xt?.bk?
+*.xt?.orig
+
+# TwinCAT multiuser and generated directories
+**/.TcGit/
+**/_Boot/
+**/_CompileInfo/
+**/_Libraries/
+**/_ModuleInstall/
+**/_Deployment/
+**/_Repository/
+
+# TwinCAT Shell and measurement files
+*.project.~u
+*.vsm
+
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
